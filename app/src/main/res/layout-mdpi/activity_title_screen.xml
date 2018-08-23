@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_title_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edumacation.doublesum.TitleScreen">
+
+    <Button
+        android:text="Play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playButton"
+        style="@style/Widget.AppCompat.Button"
+        android:elevation="24dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/mainTitle"
+        android:layout_centerHorizontal="true"
+        android:onClick="transitionLevelSelector"
+        android:textSize="60dp" />
+
+    <TextView
+        android:text="Double                                           &amp;        Sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainTitle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:fontFamily="serif-monospace"
+        android:textColor="#000000"
+        android:textAlignment="textEnd"
+        android:foregroundGravity="top"
+        android:textStyle="normal|bold"
+        tools:text="Double                        &amp;          Sum"
+        android:textSize="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="2x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/twox"
+        android:textAppearance="@style/TextText"
+        android:textColor="#32000000"
+        tools:text="2x"
+        android:textSize="370dp"
+        android:layout_alignBottom="@+id/mainTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="28dp" />
+
+    <Button
+        android:text="Rules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/directionsButton"
+        style="@style/Widget.AppCompat.Button"
+        android:elevation="24dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:onClick="transitionDirections"
+        android:layout_below="@+id/playButton"
+        android:layout_centerHorizontal="true"
+        android:textSize="60dp" />
+</RelativeLayout>

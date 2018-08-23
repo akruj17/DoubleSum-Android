@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/gradientDrawable"
+        android:bottom="-6dp"
+        android:left="0.0001dp"
+        android:right="-6dp"
+        android:top="0.0001dp">
+        <shape android:shape="rectangle" >
+            <stroke
+                android:width="3dp"
+                android:color="#000000" />
+
+            <solid android:color="#00FFFFFF" />
+        </shape>
+    </item>
+
+</layer-list>

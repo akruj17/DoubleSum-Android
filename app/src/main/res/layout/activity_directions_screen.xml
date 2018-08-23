@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_directions_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edumacation.doublesum.DirectionsScreen">
+
+    <TextView
+        android:text="The objective of this game is to make it to the red tile at the end of each level with exactly the required score...and maybe learn some math along the way :)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/directions_first"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="serif-monospace"
+        android:textStyle="normal|bold"
+        android:textSize="18dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:text="There are many ways to beat each level. With this game, I hope you learn your powers of two!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/directions_last"
+        android:layout_below="@+id/directions_second"
+        android:textStyle="normal|bold"
+        android:fontFamily="serif-monospace"
+        android:textSize="18dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="#000000"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="When you click on an empty tile adjacent to at least one filled tile, the new value placed will be DOUBLE that of the greatest adjacent tile. The sum shown is the total of all the tiles' values, and after you reach the red tile, it should equal the required sum shown in order to beat the level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/directions_second"
+        android:textStyle="normal|bold"
+        android:fontFamily="serif-monospace"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

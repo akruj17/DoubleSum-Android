@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="level_scores">
+        <item>511</item>
+        <item>33554431</item>
+        <item>535</item>
+        <item>765</item>
+        <item>131071</item>
+        <item>8191</item>
+        <item>2047</item>
+        <item>1103</item>
+        <item>571</item>
+    </integer-array>
+</resources>
